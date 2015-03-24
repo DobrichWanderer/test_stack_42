@@ -1,22 +1,19 @@
 #ifndef STACK_H_INCLUDED
 #define STACK_H_INCLUDED
-class Number{
+class stacks{
 public:
-Number();
-Number(int);
-~Number();
-int get_number();
-int capacity=4;
-int change_capacity(int &);
-int* pointer=new int [capacity];
-//push ();
-//pop ();
-void print ()const;
-bool emptiness()const;
-int* get_top();
+    stacks();
+    void push(int);
+    void pop();
+    int top()const;
+    bool emptiness()const;
+    void print();
+    bool full()const;
 private:
-int number_in_decimal;
+    int pointer_to_top;
+    int capacity;
+    int arr[100];
 };
-
+stacks num_stacks(int );
 
 #endif // STACK_H_INCLUDED

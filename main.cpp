@@ -3,7 +3,11 @@
 using namespace std;
 
 int main()
-{
-    cout << "Hello world!" << endl;
+{   int number;
+    cout<<"number=";
+    cin>>number;
+    num_stacks(number).print();
+
+
     return 0;
 }
